@@ -1,26 +1,26 @@
 class Ontogen < Formula
   desc "Version control system for RDF datasets"
   homepage "https://ontogen.io"
+  version "0.1.3"
   license "MIT"
-  version "0.1.2"
 
   on_macos do
     if Hardware::CPU.intel?
       url "https://github.com/ontogen/cli/releases/download/v#{version}/og_macos_intel"
-      sha256 "3fb16c159059fec0653964ed43276326f6776f16b067ef1c8e08e981e01362f2"
+      sha256 "8cc65770d02efb76ebf1db77ba158781893831ebb9294f196f375c6f9c73ee87"
     else
       url "https://github.com/ontogen/cli/releases/download/v#{version}/og_macos_arm"
-      sha256 "551ef10a1e475a9e5312375d5e7239b84cd26eeef2d2cf84d77812a87fc8d1f6"
+      sha256 "7c382c2ed5bb5da4a74e24a392a3b2ff90e553a149b36019ed5e17d6e01d7922"
     end
   end
 
   on_linux do
     if Hardware::CPU.intel?
       url "https://github.com/ontogen/cli/releases/download/v#{version}/og_linux_intel"
-      sha256 "e56babd0724d20450328574d2f2a95d89f389e08107616dd2c7e498656508a59"
+      sha256 "b934a28413ef0123e336a9993f6ecaebd9effa70267d392a322cc3a7494e602d"
     else
       url "https://github.com/ontogen/cli/releases/download/v#{version}/og_linux_arm"
-      sha256 "8deb1a45c52dc6526a7b856ad13eb39fb586ddfc82489fb06999e49e941749db"
+      sha256 "55208071b31501d04e936722ab5c0ef1f5b6599ed17e2c89f87cce6244f0b8f7"
     end
   end
 
